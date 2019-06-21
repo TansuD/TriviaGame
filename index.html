@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trivia Game</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <style src="assets/css/style.css">
+      header {
+        text-align: center;
+      }
+      body {
+        z-index: -1;
+        height: 500px;
+        background-size: cover;
+        background-image: url("assets/images/space.jpg");
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="assets/images/space.jpg" alt="space-background" />
+    <header>
+      <h1><strong>Totally Tirival Trivia!</strong></h1>
+    </header>
+    <button type="button" id="start-button" class="btn btn-primary btn-lg">
+      Start
+    </button>
+    <div class="card text-center" id="questions">
+      <div class="card-body" id="timer">
+        <h3>Time remaining:<span id="remaining-time"></span></h3>
+      </div>
+      <div class="card-body">
+        <h3>Which is the brightest star in the night sky?</h3>
+      </div>
+      <div class="card-body">
+        <div class="btn-group" role="group" aria-label="answers">
+          <button type="button" class="btn btn-secondary">Vega</button>
+          <button type="button" class="btn btn-secondary">Polaris</button>
+          <button type="button" class="btn btn-secondary">Sirius</button>
+          <button type="button" class="btn btn-secondary">Betelgeuse</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h3>Which is the hottest planet?</h3>
+      </div>
+      <div class="card-body">
+        <div class="btn-group" role="group" aria-label="answers">
+          <button type="button" class="btn btn-secondary">Venus</button>
+          <button type="button" class="btn btn-secondary">Mercury</button>
+          <button type="button" class="btn btn-secondary">Mars</button>
+          <button type="button" class="btn btn-secondary">Earth</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h3>How many satellites does Jupiter have?</h3>
+      </div>
+      <div class="card-body">
+        <div class="btn-group" role="group" aria-label="answers">
+          <button type="button" class="btn btn-secondary">34</button>
+          <button type="button" class="btn btn-secondary">96</button>
+          <button type="button" class="btn btn-secondary">63</button>
+          <button type="button" class="btn btn-secondary">79</button>
+        </div>
+      </div>
+    </div>
+    <div class="card text-center" id="results">
+      All done!
+      <div class="card-body">
+        Correct answers:
+      </div>
+      <div class="card-body">
+        Incorrect answers:
+      </div>
+      <div class="card-body">
+        Unanswered:
+      </div>
+    </div>
+    <script src="assets/javascript/app.js"></script>
+  </body>
+</html>
