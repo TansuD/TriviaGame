@@ -102,6 +102,7 @@ $(document).ready(function () {
     function timerRunning() {
 
 
+
         if (spaceTrivia.timer > -1 && spaceTrivia.currentSet < Object.keys(spaceTrivia.questions).length) {
             $("#timer").text(spaceTrivia.timer);
             spaceTrivia.timer--;
